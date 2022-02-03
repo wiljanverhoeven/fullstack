@@ -1,0 +1,45 @@
+:root {
+  --clr-neon: hsl(173, 100%, 50%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 40vh;
+  background: var(--clr-bg);
+  font-family: 'Anton', sans-serif;
+  color: var(--clr-neon);
+  font-family: 'Anton', sans-serif;
+}
+
+input[type="submit"] {	
+  width: 100%;
+}
+input[type="file"] {	
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 40vh;
+    background: var(--clr-bg);
+    font-family: 'Anton', sans-serif;
+    color: var(--clr-neon);
+    font-family: 'Anton', sans-serif;
+  }
+
+  .upload_form {
+   width: 100%;
+  }
+}
